@@ -1,0 +1,50 @@
+﻿@model Movies.Domain.Movie
+
+@{
+    ViewBag.Title = "Просмотр";
+}
+
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+<h4>@Html.DisplayFor(model => model.YearOfRelease)</h4>
+
+<div>    
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirectorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirectorName)
+        </dd>
+
+    </dl>
+
+    <div class="row">
+        <div class="col-md-6">
+            @if (Model.ImageData == null)
+            {
+                <img class="img-thumbnail" width="240" height="240" src="~/Content/Images/kinoplenka.png" />
+            }
+            else
+            {
+                <img class="img-thumbnail" src="@Url.Action("GetImage", "Home", new {movieId = Model.Id })" />
+            }
+        </div>
+
+        <div class="col-md-6">
+            @Html.DisplayFor(model => model.Description)
+        </div>
+    </div>
+</div>
+
+@if (ViewBag.UserId == Model.UserId)
+{
+    <div class="btn btn-default" style="margin-top:12px">
+        @Html.ActionLink("Редактировать", "Edit", new { id = Model.Id })
+    </div>
+}
+<div class="btn btn-default" style="margin-top:12px">
+    @Html.ActionLink("К списку фильмов", "Index")
+</div>

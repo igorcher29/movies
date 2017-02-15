@@ -1,0 +1,5 @@
+c:\Users\igor-\Documents\Visual Studio 2015\Projects\Movies\Movies.Domain\bin\Debug\Movies.Domain.dll
+c:\Users\igor-\Documents\Visual Studio 2015\Projects\Movies\Movies.Domain\bin\Debug\Movies.Domain.pdb
+c:\Users\igor-\Documents\Visual Studio 2015\Projects\Movies\Movies.Domain\obj\Debug\Movies.Domain.csprojResolveAssemblyReference.cache
+c:\Users\igor-\Documents\Visual Studio 2015\Projects\Movies\Movies.Domain\obj\Debug\Movies.Domain.dll
+c:\Users\igor-\Documents\Visual Studio 2015\Projects\Movies\Movies.Domain\obj\Debug\Movies.Domain.pdb
